@@ -1,6 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+#part 1
+def make_tridiagonal(N, b, d, a):
+    #need to make and NxN matrix
 
 #part 2
 def make_initialcond(x, sigma_0, k_0):
