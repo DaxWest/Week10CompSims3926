@@ -30,5 +30,12 @@ plt.plot(x, a_x)
 plt.show()
 
 # #part 3
-# def spectral_radius(A):
-#     #needs to use np.linalg.eig
+def spectral_radius(A):
+    #needs to use np.linalg.eig
+    eigen = np.linalg.eig(A)
+    return eigen[0], np.abs(np.max(eigen[0]))
+
+eigen_vals, mav_abs_val = spectral_radius(A)
+
+print(eigen_vals)
+print(mav_abs_val)
