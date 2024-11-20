@@ -11,7 +11,7 @@ d = 1
 a = 5
 
 A = make_tridiagonal(N, b, d, a)
-print(A)
+# print(A)
 
 #part 2
 def make_initialcond(x, sigma_0, k_0):
@@ -24,7 +24,10 @@ k_0 = 35
 x = np.linspace(-L/2, L/2, N_space)
 
 a_x = make_initialcond(x, sigma_0, k_0)
-print(a_x)
+# print(a_x)
+fig = plt.figure()
+plt.plot(x, a_x)
+plt.show()
 
 # #part 3
 # def spectral_radius(A):
