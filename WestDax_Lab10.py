@@ -27,6 +27,9 @@ a_x = make_initialcond(x, sigma_0, k_0)
 # print(a_x)
 fig = plt.figure()
 plt.plot(x, a_x)
+plt.title('Wavepacket vs Position')
+plt.ylabel('a(x,0)')
+plt.xlabel('x')
 plt.show()
 
 # #part 3
