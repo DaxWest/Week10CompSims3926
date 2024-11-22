@@ -36,9 +36,8 @@ plt.show()
 def spectral_radius(A):
     #needs to use np.linalg.eig
     eigen = np.linalg.eig(A)
-    return eigen[0], np.max(np.abs(eigen[0]))
+    return np.max(np.abs(eigen[0]))
 
-eigen_vals, mav_abs_val = spectral_radius(A)
+max_abs_val = spectral_radius(A)
 
-print(eigen_vals)
-print(mav_abs_val)
+print(f'The eigenvalue with the maximum absolute value: {max_abs_val}')
