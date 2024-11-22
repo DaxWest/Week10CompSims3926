@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+#github repository: https://github.com/DaxWest/Week10CompSims3926.git
 
 #part 1
 def make_tridiagonal(N, b, d, a):
@@ -30,7 +31,7 @@ plt.plot(x, a_x)
 plt.title('Wavepacket vs Position')
 plt.ylabel('a(x,0)')
 plt.xlabel('x')
-plt.show()
+plt.savefig('WestDax_Lab10_Fig1')
 
 # #part 3
 def spectral_radius(A):
